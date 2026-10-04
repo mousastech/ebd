@@ -70,15 +70,6 @@ export function RollCall({
         <div className="progress"><span className="tone-brand" style={{ width: `${pct}%` }} /></div>
       </div>
 
-      <section className="hero">
-        <div className="hero-eyebrow">Presença da aula</div>
-        <div className="hero-main"><span className="hero-value">{pct}%</span><span className="hero-caption">presença geral</span></div>
-        <div className="hero-stats">
-          <div><strong>{presentes}/{students.length}</strong><span>Presentes</span></div>
-          <div><strong>{visitors || 0}</strong><span>Visitantes</span></div>
-          <div><strong>R$ {offering || "0,00"}</strong><span>Oferta</span></div>
-        </div>
-      </section>
 
       {counts && (
         <div className="card counts">

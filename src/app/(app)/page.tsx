@@ -151,13 +151,13 @@ export default async function Home({ searchParams }: { searchParams: Promise<Fla
         <div className="grid">
           {news.length > 0 && (
             <Link href="/comunicados" className="card" style={{ textDecoration: "none", color: "inherit" }}>
-              <div className="muted small">📢 Comunicados</div>
+              <div className="muted small">Comunicados</div>
               {news.map((a) => <div key={a.id}><strong>{a.title}</strong>{!a.read && <span className="chip ok" style={{ marginLeft: 6 }}><i />novo</span>}</div>)}
             </Link>
           )}
           {nextEvents.length > 0 && (
             <Link href="/agenda" className="card" style={{ textDecoration: "none", color: "inherit" }}>
-              <div className="muted small">📅 Próximos eventos</div>
+              <div className="muted small">Próximos eventos</div>
               {nextEvents.map((e) => (
                 <div key={e.id}><strong>{e.title}</strong> <span className="small muted">{e.starts_at.slice(8, 10)}/{e.starts_at.slice(5, 7)} às {e.starts_at.slice(11, 16)}{e.mine === "sim" ? " · ✓ você vai" : ""}</span></div>
               ))}

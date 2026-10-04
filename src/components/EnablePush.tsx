@@ -55,7 +55,7 @@ export function EnablePush() {
   return (
     <div className="card row between">
       <span>
-        <strong>🔔 Notificações no aparelho</strong>
+        <strong>Notificações no aparelho</strong>
         <br />
         <span className="small muted">
           {state === "ativo" ? "Ativadas neste aparelho." : state === "negado" ? "Bloqueadas nas configurações do navegador." :

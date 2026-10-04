@@ -35,7 +35,7 @@ export default async function PersonFilePage({ params, searchParams }: { params:
           <div>
           <p className="small noprint" style={{ margin: 0 }}><Link href="/pessoas">← Pessoas</Link></p>
           <h1>{p.name}</h1>
-          {congs.length > 1 && <span className="muted small">⛪ {congregationName(p.congregation_id)}</span>}
+          {congs.length > 1 && <span className="muted small">{congregationName(p.congregation_id)}</span>}
           <div>{p.categories.map((c) => <span key={c} className="badge" style={{ marginRight: 4 }}>{CATEGORY_SINGULAR[c]}</span>)}</div>
           </div>
         </div>

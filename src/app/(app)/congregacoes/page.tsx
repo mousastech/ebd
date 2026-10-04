@@ -24,7 +24,7 @@ export default async function CongregationsPage({ searchParams }: { searchParams
 
       <Hero
         eyebrow={current ? (current.kind === "sede" ? "Igreja atual · Sede" : "Igreja atual · Filial") : "Visão consolidada"}
-        icon="⛪"
+
         value={current ? current.name : `${all.length} congregações`}
         stats={[
           { label: "Classes", value: current ? current.classes : all.reduce((n, c) => n + c.classes, 0) },

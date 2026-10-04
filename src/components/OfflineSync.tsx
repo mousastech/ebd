@@ -78,7 +78,7 @@ export function PrepareOffline({ urls }: { urls: string[] }) {
   }
   return (
     <button type="button" className="ghost small" onClick={go}>
-      {state === "ok" ? "✓ Pronto para usar sem internet" : state === "no" ? "Instale o app para usar sem internet" : "📥 Preparar para usar sem internet"}
+      {state === "ok" ? "✓ Pronto para usar sem internet" : state === "no" ? "Instale o app para usar sem internet" : "Preparar para usar sem internet"}
     </button>
   );
 }
